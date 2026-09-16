@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+eslint.config.js
+package-lock.json
+package.json
+postcss.config.js
+README.md 
+tailwind.config.js 
+vite.config.js 
