@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: complaint-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: complaint-frontend
+  template:
+    metadata:
+      labels:
+        app: complaint-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: complaint-frontend:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80

@@ -13,3 +13,24 @@ postcss.config.js
 README.md 
 tailwind.config.js 
 vite.config.js 
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node.js dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# macOS files
+.DS_Store
+
+# IDE settings
+.vscode/

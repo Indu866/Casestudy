@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: complaint-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: complaint-backend
+  template:
+    metadata:
+      labels:
+        app: complaint-backend
+    spec:
+      containers:
+        - name: backend
+          image: complaint-backend:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5001
+          env:
+            - name: PORT
+              value: "5001"
+            - name: DB_HOST
+              value: "host.docker.internal"
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: "compaint_db"
+            - name: DB_USER
+              value: "postgres"
+            - name: DB_PASSWORD
+              value: "indu"
+            - name: JWT_SECRET
+              value: "mysecretkey"
