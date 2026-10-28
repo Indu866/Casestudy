@@ -1,36 +1,20 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
 build/
-.env
-.env.*
-.DS_Store
-.vscode/
-.idea/
-eslint.config.js
-package-lock.json
-package.json
-postcss.config.js
-README.md 
-tailwind.config.js 
-vite.config.js 
+
 # Environment variables and secrets
 .env
 .env.*
 !.env.example
 
-# Node.js dependencies
-node_modules/
-
-# Build files
-dist/
-build/
-
 # Logs
 *.log
 npm-debug.log*
 
-# macOS files
+# macOS and IDE files
 .DS_Store
-
-# IDE settings
 .vscode/
+.idea/
