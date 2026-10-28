@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh '''
                     docker build -t indupriyasanga/complaint-frontend:latest complaint-management-system
-                    docker build -t indupriyasanga/complaint-backend:latest backend
+                    docker build -t indupriyasanga/complaint-backend:latest complaint-backend
                 '''
             }
         }
